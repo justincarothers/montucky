@@ -81,3 +81,18 @@ label {
 .footer a {        /*override the color of email so its not hideous. */
   color:black;
 }
+
+#winnerFour img {
+  max-width: 500px;
+}
+#winnerThree img {
+  max-width: 500px;
+}
+
+#winnerTwo img {
+  max-width: 500px;
+}
+
+#winnerOne img {
+  max-width: 500px;
+}
