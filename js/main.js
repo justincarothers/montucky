@@ -1,6 +1,14 @@
 $(document).ready(function() {
   // ======================ANIMATIONS=================
-  var price
+
+
+  $('#btnSubmit').click(function(){
+    var result1 = $('input[name="query1"]:checked').val();
+    var result2 = $('input[name="query2"]:checked').val();
+    var result3 = $('input[name="query3"]:checked').val();
+    alert (result1 + result2 + result3);
+  });
+
   $("#optionTwo").hide();
   $("#optionThree").hide();
   $("#errorOne").hide();
@@ -10,7 +18,7 @@ $(document).ready(function() {
   }, 0)
   $("#introBanner").animate({
     marginLeft: "-=4000" ,
-  }, 300);
+  }, 500);
 
   $("img").animate({
     marginLeft: "+=4000" ,
@@ -21,17 +29,22 @@ $(document).ready(function() {
 
   // =============LOGIC=================
 
-  $('#radioGroup1').on('change', function() {
-    alert($('input[name=query1]:checked').val());
-  });
+  // $('#radioGroup1').on('change', function() {
+  //   alert($('input[name=query1]:checked').val());
+  // });
+  //
+  // $('#radioGroup2').on('change', function() {
+  //   alert($('input[name=query2]:checked').val());
+  // });
+  //
+  // $('#radioGroup3').on('change', function() {
+  //   alert($('input[name=query3]:checked').val());
+  // });
+  //
+  //
+  //
+  //
 
-  $('#radioGroup1').on('change', function() {
-    alert($('input[name=query2]:checked').val());
-  });
-
-  $('#radioGroup1').on('change', function() {
-    alert($('input[name=query3]:checked').val());
-  });
 
 //   $("#submit").click(function() {
 //     alert($("input[name=q12_3]:checked").val());
