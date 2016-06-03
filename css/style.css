@@ -65,6 +65,10 @@ label {
   text-align: center;
 }
 
+label {
+  font-weight: normal;
+}
+
 .spacePage {
   border-radius: 50%
   padding-top: 0;
