@@ -21,11 +21,23 @@ $(document).ready(function() {
 
   // =============LOGIC=================
 
-  $('#myForm input').on('change', function() {
-    alert($('input[name=radioName]:checked', '#myForm').val());
+  $('#radioGroup1').on('change', function() {
+    alert($('input[name=query1]:checked').val());
   });
 
+  $('#radioGroup1').on('change', function() {
+    alert($('input[name=query2]:checked').val());
+  });
 
+  $('#radioGroup1').on('change', function() {
+    alert($('input[name=query3]:checked').val());
+  });
+
+//   $("#submit").click(function() {
+//     alert($("input[name=q12_3]:checked").val());
+// });
+//
+//
 
 
 
